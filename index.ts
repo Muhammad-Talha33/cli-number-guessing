@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
 import inquirer from "inquirer";
+import chalk from "chalk";
 
 //1) Computer will generate a random number
 
@@ -9,6 +10,12 @@ import inquirer from "inquirer";
 //3) Compare user input with computer genrated number and show result
 
 const randomNumber = Math.floor(Math.random() * 6 + 1);
+
+console.log(
+  chalk.bgBlack.yellow.bold.inverse(
+    "Welcome To MindNum a Simple number guessing game!"
+  )
+);
 
 const answers = await inquirer.prompt([
   {
@@ -19,7 +26,11 @@ const answers = await inquirer.prompt([
 ]);
 
 if (answers.userGuessedNumber === randomNumber) {
-  console.log("Congratulations! you guessed right number.");
+  console.log(
+    chalk.green("Boom! You've guessed the right number. Congratulations!")
+  );
 } else {
-  console.log("You guessed wrong number");
+  console.log(
+    chalk.red("Oops! You've guessed the wrong number. Better luck next time!")
+  );
 }
