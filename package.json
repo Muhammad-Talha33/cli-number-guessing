@@ -1,6 +1,6 @@
 {
   "name": "mindnum-simple-number-guessing",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "This is a numbers guessing game that runs on a command-line interface (CLI)",
   "main": "index.js",
   "type": "module",
