@@ -1,6 +1,6 @@
 {
   "name": "mindnum-simple-number-guessing",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This is a numbers guessing game that runs on a command-line interface (CLI)",
   "main": "index.js",
   "type": "module",
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Muhammad Talha",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",
